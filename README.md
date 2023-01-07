@@ -31,7 +31,7 @@
  //データベースへ接続
  try{Connection conn = DriveerManager.getConnection{JDBC_URL, DB_USER, DB_PASS)){
  //SELECT文を準備
- String sql = "SELECT ID, NAMEW, AGE FROM, EMPLOYEE";
+ String sql = "SELECT ID, NAME, AGE FROM, EMPLOYEE";
  PreparedStatement pStmt = conn.prepareStatement(sql);
  //SELECTを実行し、結果表を取得
  ResultSet rs = pStmt.executeWuery();
