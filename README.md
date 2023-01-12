@@ -35,7 +35,27 @@ public class HelloServlet extends HttpServlet {
 ```
 
 
+#実際に作ってみよう！
 
+- まずは　プロジェクトを作って右クリックー>サーブレットー> クラス名をHelloServlet(先頭は大文字）
+- srcの下に自動的に作られる。
+- いろんなものが書かれた状態である。これらは次の三つを満たしている
+  - javax.servlet.http.HttpServlet　クラスを継承する。
+  - doGet(), doPost()メソッドをオーバーライドして使う
+  - サーブレット関係のクラスをインポートする。
+
+## オーバーライドのサンプルを見てみよう！
+```Java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+response.setContentType("text/html; charset- UTF-8");
+PrintWriter out = response.getWriter();
+out.print("<html>");
+out.print("<head>");
+out.print("<title>Servlet</title>");
+out.print("</head>");
+out.print("<body><h1>Hello, Servlet</h1></body>");
+out.print("</html>");
+```
 # DAO パターンとは
  データベース操作（テーブルに対する検索、追加、更新、削除など）をたんんとうするクラスを用意して、データベースに修正が必要なときでも、容易に修正ができるようにする手法。
  
