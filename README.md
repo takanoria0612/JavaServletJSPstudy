@@ -136,5 +136,16 @@ out.print("</html>");
    }
 }
 
+# 【EL式の演習問題】
+Exampleプロジェクトに、以下を作成して下さい。
+ -elパッケージを作成
+    -プロジェクト名（Example）右クリック→新規→その他→ Java > パッケージ
+ -ElSampleServlet というサーブレットクラスを作成
+    -elパッケージ右クリック→新規→サーブレット→クラス名：ElSampleServlet
+ -ElSample.jsp を作成
+  -WEB-INF > JSP フォルダに作成すること
+ -libにtablibのjarを配置する
+
+
 
 
